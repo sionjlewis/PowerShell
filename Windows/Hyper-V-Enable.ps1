@@ -1,14 +1,14 @@
 # =========================
-# Disable Microsoft Hyper-V
+# Enable Microsoft Hyper-V
 # http://www.SJLewis.com
 # =========================
 
 $obj = Get-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V
 
-If ($obj.State -eq 'Enabled') {
-    Write-Host ("`tWindowsOptionalFeature: {0} is being disabled..." -f $obj.FeatureName) -ForegroundColor Green
-    $state = Disable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-All
-
+If ($obj.State -eq 'Disable') {
+    Write-Host ("`tWindowsOptionalFeature: {0} is being enabled..." -f $obj.FeatureName) -ForegroundColor Green
+    $state = Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V –All
+    
     If ($state.RestartNeeded -eq $true) {
         Write-Host "`tPlease restart your system..." -ForegroundColor Yellow
     } Else {
