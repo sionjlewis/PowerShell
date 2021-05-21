@@ -2,16 +2,16 @@
 # SPO-Set-ListCTFieldDisplayOnNewOrEditForm.ps1
 # Use this script to update hide or show fields with SharePoint List/Library New and/or Edit forms.
 # ------------------------------------------------------------------------------------------------------
-# Created By:    Siôn Lewis
+# Created By:    SiÃ´n Lewis
 # Created Date:  DD/MM/YYYY
-# Modified By:   Siôn Lewis
+# Modified By:   SiÃ´n Lewis
 # Modified Date: 21/05/2021
 # ------------------------------------------------------------------------------------------------------
 # Instructions:  1. Update the variables at the top of the script before running in your environment.
 #                2. Update the function calls under the MAIN comment.
 # ------------------------------------------------------------------------------------------------------
 # Note: Modern SharePoint forms have made hiding or showing fields much easier, via the UI. If, however, 
-#       form has previously been modified using “old” techniques, then new option will not be available. 
+#       form has previously been modified using "old" techniques, then new option will not be available. 
 # ======================================================================================================
 
 
