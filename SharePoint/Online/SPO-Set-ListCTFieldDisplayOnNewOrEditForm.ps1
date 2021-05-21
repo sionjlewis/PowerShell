@@ -18,8 +18,8 @@
 # ------------------------------------------------------------------------------------------------------
 # Edit these variables.
 # ------------------------------------------------------------------------------------------------------
-[string]$siteUrl  		= "https://tenant.sharepoint.com/sites/Example";
-[string]$listTitle 		= "Site Request";
+[string]$siteUrl  	= "https://tenant.sharepoint.com/sites/Example";
+[string]$listTitle 	= "Site Request";
 [string]$contentTypeId  = "0x0100SJL24BE2E8AA04F6B836B47A46956836A0079A016644482412E90F2D5860D9BD1E9";
 
 
