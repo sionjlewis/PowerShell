@@ -8,4 +8,4 @@ We will not be liable for damages or losses arising from your use or inability t
 
 ## License
 
-https://github.com/sionjlewis/PowerShell/blob/main/LICENSE
+https://github.com/sionjlewis/PowerShell/blob/master/LICENSE
