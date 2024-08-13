@@ -3,7 +3,7 @@
 # -----------------------------------------------------------------------------------------------------
 # Created By:    Siôn Lewis (www.sjlewis.com)
 # Modified By:   Siôn Lewis (www.sjlewis.com)
-# Modified Date: 18/05/2024
+# Modified Date: 13/08/2024
 # -----------------------------------------------------------------------------------------------------
 # Prerequisites: This script uses PnP Management Shell, see the link for configuration instructions:
 # https://learn.microsoft.com/en-us/sharepoint/dev/declarative-customization/site-design-pnppowershell
@@ -124,7 +124,10 @@ function Add-OutputToCSVFile {
     $xmlContent = $xmlContent -replace '"', '""';
 
     # Remove double spaces.
-    $xmlContent = $xmlContent -replace '  ', '';
+    $xmlContent = $xmlContent -replace '  ', ' ';
+
+    # Remove space before closing bracket.
+    $xmlContent = $xmlContent -replace ' >', '>';
 	
 	# Create CSV format: InternalName,FieldXml.
     $xmlContent = ("{0},`"{1}`"" -f $InternalName, $xmlContent);
